@@ -12,7 +12,60 @@
 
 <body>
   <div class="wrapper">
-    
+    <header class="header">
+      <div class="header--content container">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand logo">expice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSuppurtedContent" aria-controls="navbarSuppurtedContent" aria-expanded="false" aria-label="Переключатель навигации">
+              <div class="navbar-toggler-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSuppurtedContent">
+              <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 flex-row">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">Menu One</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Menu Two</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Menu Three</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Menu Four</a>
+                </li>
+              </ul>
+
+              <div class="user">
+                <span class="icon-user user-active"></span>
+                <p class="angle-down">user</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header__main">
+          <div class="header__text"></div>
+          <div id="carouselHeader" class="carousel slide" data-bs-target="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+              <span class="long-arrow-left-regular" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+              <span class="long-arrow-right-regular" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>

@@ -93,9 +93,129 @@ a {
 }
 
 .wrapper {
-  max-width: 1684px;
+  max-width: var(--wrapper-width, 1920px);
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+  background: var(--lightBeige);
+}
+.wrapper--small {
+  --wrapper-width: 720px;
+}
+.container {
+  max-width: 1652px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+/* navbar */
+.user {
+  display: flex;
+  align-items: center;
+}
+.icon-user {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+  position: relative;
+}
+.user .icon-user::before {
+  font-size: 24px;
+  color: #2E266F;
+}
+.user .icon-user::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: var(--green);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.user p {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 7px;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: var(--themeColor);
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 108px;
+  text-align: center;
+}
+
+.navbar-nav {
+  gap: 40px;
+}
+.navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--darkBlue);
+  text-transform: capitalize;
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 20px;
+}
+.navbar-toggler-icon span {
+  display: block;
+  width: 40px;
+  height: 2.5px;
+  background: #fff;
+  border-radius: 5px;
+}
+.navbar-toggler-icon span:nth-of-type(3) {
+  width: 27.5px;
+}
+.navbar-collapse{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container-fluid button:focus,
+.container-fluid button:active,
+.navbar-toggler:focus {
+  box-shadow: unset !important;
+}
+.container-fluid button::-moz-focus-inner {
+  box-shadow: unset !important;
+}
+
+@media (max-width: 1195px) {
+  .navbar .logo {
+    font-size: 60px;
+    line-height: 90px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar .logo {
+    font-size: 48px;
+    line-height: 90px;
+  }
 }
